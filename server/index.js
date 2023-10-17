@@ -22,7 +22,7 @@ app.use("/post", postRouter);
 app.use("/user", userRouter);
 
 const CONNECTION_URL =
-  "mongodb+srv://social:social123@cluster0.yeva5kg.mongodb.net/";
+  process.env.CONNECTION_URL;
 
 const PORT = process.env.PORT || 5000;
 
